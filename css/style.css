@@ -48,11 +48,8 @@ body.dark {
     border-radius: 10px;
     margin-top: 10px;
     border: 1px solid #CCC;
-    padding-top: 1px;
 }
-li span,a{
-    margin-top:50px;
-}
+
 .upload{
     background-color: #0075FF;
     width: fit-content;
@@ -64,6 +61,22 @@ li span,a{
     color: white;
     letter-spacing: 5px;
 }
+.img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#img{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width:900px ;
+    height:550px ;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 .upload:hover{
     background-color: #0c268f;
 }
@@ -91,6 +104,7 @@ li span,a{
 }
 .filters ul li label{
 color: black;
+font-size: 17px;
 }
 .filters ul li:last-child{
     flex-direction: row;
@@ -108,8 +122,9 @@ color: black;
     padding: 10px 25px;
     width: fit-content;
     letter-spacing: 5px;
-    margin-top: 5px;
+    margin-bottom: 5px;
     color: white;
+    cursor: pointer;
 }
 #download:hover,.reset:hover{
     background-color:#0c268f ;
