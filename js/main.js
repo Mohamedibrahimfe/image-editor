@@ -18,22 +18,5 @@ darkModeIcon.addEventListener('click', () => {
         element.classList.toggle('dark', isDarkMode);
     });
 });
-let upload = document.getElementById("upload")
-upload.onchange = function(){
-    resetValue()
-    download.style.display = 'block'
-    reset.style.display = 'block'
-    imgBox.style.display = 'block'
-    let file = new FileReader();
-    file.readAsDataURL(upload.files[0])
 
-    file.onload = function(){
-        img.src = file.result
-    }
-    img.onload = function(){
-        canvas.width = img.width;
-        canvas.height = img.height;
-        ctx.drawImage(img,0,0,canvas.width,canvas.height);
-        img.style.display = 'none'
-    }
-}
+// handle upload picture
