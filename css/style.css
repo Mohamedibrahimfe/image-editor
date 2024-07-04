@@ -88,6 +88,8 @@ canvas{
     position: absolute;
     width:900px ;
     height:550px ;
+    border: none;
+    outline: none;
 }
 .filters{
     display: flex;
